@@ -46,14 +46,14 @@ jobs:
         included-tags: [""]
         excluded-tags: [""]
         comment: [""]
-        include:
-          # Hive tests
-          - modules: hive
-            java: 8
-            hadoop: hadoop3.2
-            hive: hive2.3
-            included-tags: org.apache.spark.tags.SlowHiveTest
-            comment: "- slow tests"
+        #include:
+        #  # Hive tests
+        #  - modules: hive
+        #    java: 8
+        #    hadoop: hadoop3.2
+        #    hive: hive2.3
+        #    included-tags: org.apache.spark.tags.SlowHiveTest
+        #    comment: "- slow tests"
 
     env:
       MODULES_TO_TEST: ${{ matrix.modules }}
